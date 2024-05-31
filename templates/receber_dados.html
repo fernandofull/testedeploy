@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados</title>
+</head>
+<body>
+<!-- por meio do jinja na url for recebe o nome da função que tem o retorno esperado. -->
+    <form action="{{url_for('receber_dados')}}" method="post">
+
+        <label for="nome"> Digite o seu nome </label>
+        <input type="text" name="nome">
+        <label for="cidade"> Digite a sua cidade </label>
+        <input type="text" name="cidade">
+        <input type="submit" value="Enviar dados">
+
+    </form>
+
+
+</body>
+</html>
